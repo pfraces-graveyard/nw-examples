@@ -32,14 +32,16 @@ How to build a frameless window
 
 **package.json**
 
-    {
-      "name": "frameless",
-      "main": "index.html",
-      "window": {
-        "frame": false,
-        "toolbar": false
-      }
-    }
+```json
+{
+  "name": "frameless",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false
+  }
+}
+```
 
 ## 2. args
 
@@ -47,16 +49,18 @@ How to access to command line arguments
 
 **index.html**
 
-    <div id="canvas"></div>
-    <script>
-      var gui = require('nw.gui'),
-        canvas = document.getElementById('canvas')
-          .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
+```html
+<div id="canvas"></div>
+<script>
+  var gui = require('nw.gui'),
+    canvas = document.getElementById('canvas')
+      .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
 
-      process.stdin.on('data', function (data) {
-        console.log(data);
-      });
-    </script>
+  process.stdin.on('data', function (data) {
+    console.log(data);
+  });
+</script>
+```
 
 ## 3. modules
 
@@ -66,14 +70,16 @@ How to organize your code in isolated files
 
 **index.html**
 
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <title>Modules example</title>
-      </head>
-      <body>
-        <div id="canvas"></div>
-        <script src="main.js"></script>
-      </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Modules example</title>
+  </head>
+  <body>
+    <div id="canvas"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
+```
