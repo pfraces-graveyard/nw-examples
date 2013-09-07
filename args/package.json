@@ -1,0 +1,8 @@
+{
+  "name": "args",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "modules",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false
+  }
+}

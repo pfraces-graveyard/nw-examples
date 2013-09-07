@@ -1,0 +1,8 @@
+{
+  "name": "frameless",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false
+  }
+}
