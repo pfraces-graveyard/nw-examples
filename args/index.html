@@ -9,10 +9,6 @@
       var gui = require('nw.gui'),
         canvas = document.getElementById('canvas')
           .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
-
-      process.stdin.on('data', function (data) {
-        console.log(data);
-      });
     </script>
   </body>
 </html>

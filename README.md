@@ -55,10 +55,6 @@ How to access to command line arguments
   var gui = require('nw.gui'),
     canvas = document.getElementById('canvas')
       .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
-
-  process.stdin.on('data', function (data) {
-    console.log(data);
-  });
 </script>
 ```
 
@@ -75,7 +71,6 @@ How to organize your code in isolated files
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Modules example</title>
   </head>
   <body>
     <div id="canvas"></div>
