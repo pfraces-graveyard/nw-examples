@@ -43,26 +43,9 @@ How to build a frameless window
 }
 ```
 
-## 2. args
-
-How to access to command line arguments
-
-**index.html**
-
-```html
-<div id="canvas"></div>
-<script>
-  var gui = require('nw.gui'),
-    canvas = document.getElementById('canvas')
-      .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
-</script>
-```
-
-## 3. modules
+## 2. modules
 
 How to organize your code in isolated files
-
-## Single entry point
 
 **index.html**
 
@@ -77,4 +60,26 @@ How to organize your code in isolated files
     <script src="main.js"></script>
   </body>
 </html>
+```
+
+**main.js**
+
+```js
+var canvas = document.getElementById('canvas');
+
+canvas.innerHTML = '<h1>Modules</h1>';
+canvas.innerHTML += '<p>This is modules example</p>';
+```
+
+## 3. args
+
+How to access to command line arguments
+
+**index.html**
+
+```js
+var gui = require('nw.gui');
+
+document.getElementById('canvas')
+  .innerHTML = '<h1>Args: ' + gui.App.argv + '</h1>';
 ```
