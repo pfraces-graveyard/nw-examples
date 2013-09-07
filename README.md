@@ -45,8 +45,6 @@ How to build a frameless window
 
 How to access to command line arguments
 
-## `ng.gui`
-
 **index.html**
 
     <div id="canvas"></div>
