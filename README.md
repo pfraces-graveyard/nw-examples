@@ -1,7 +1,7 @@
 # node-webkit examples
 
-With the target of build a new browser on node-webkit inspired by **uzbl**,
-there's a bunch of examples on how to do simple isolated tasks which combined,
+With the target of building a new browser on node-webkit inspired by **uzbl**,
+there's a bunch of examples on how to do simple and isolated tasks which combined
 could offer the basis for new desktop development
 
 *One language to rule them all*
@@ -13,7 +13,7 @@ could offer the basis for new desktop development
 
 # Install
 
-    $ git clone https://github/pfraces-playground/nw-examples.git
+    $ git clone https://github.com/pfraces-playground/nw-examples.git
     $ cd nw-examples
     $ npm install
 
