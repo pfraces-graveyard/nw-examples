@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background-color: lightgrey;
+}
+
+#editor {
+  box-shadow: 0 0 1em black;
+}
+
+.CodeMirror {
+  height: auto;
+}
